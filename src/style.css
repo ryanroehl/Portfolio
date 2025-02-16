@@ -1,16 +1,16 @@
 /* Global Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #f0f8ff; /* Light blue background */
   color: #333;
-  text-align: center;  /* Centers all text globally */
+  text-align: center;
 }
 
 /* Header */
 header {
-  background: #333;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
   color: white;
   padding: 15px;
   display: flex;
@@ -18,11 +18,12 @@ header {
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
+  border-radius: 0 0 15px 15px;
 }
 
 h1 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 /* Navigation */
@@ -39,63 +40,75 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 20px;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 nav ul li {
-  padding: 10px;
+  background: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 nav ul li a {
-  color: white;
+  color: #ff0066;
   text-decoration: none;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 /* Sections */
 section {
-  max-width: 800px;
+  max-width: 90%;
   margin: 40px auto;
-  padding: 50px 20px;
+  padding: 40px 20px;
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 #hero {
-  background: #007BFF;
+  background: linear-gradient(135deg, #007BFF, #00C6FF);
   color: white;
-  padding: 60px 20px;
-  border-radius: 0;
+  padding: 80px 20px;
+  border-radius: 15px;
+  font-size: 1.2rem;
 }
 
 /* Project Card */
 .project {
-  background: white;
+  background: #ffdfd3;
   padding: 20px;
   margin: 10px auto;
   max-width: 400px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   text-align: center;
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.05);
 }
 
 /* Footer */
 footer {
-  background: #333;
+  background: #222;
   color: white;
-  padding: 10px;
-  font-size: 0.8rem;
+  padding: 15px;
+  font-size: 0.9rem;
   text-align: center;
+  border-radius: 15px 15px 0 0;
 }
 
 /* Responsive Styles */
 @media screen and (min-width: 768px) {
   nav ul {
-      gap: 40px;
+    gap: 25px;
   }
-
+  
   section {
-      max-width: 900px;
+    max-width: 800px;
   }
 }
