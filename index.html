@@ -1,13 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ryan's Portfolio</h1>
+        <nav>
+            <button id="menu-toggle">☰</button>
+            <ul id="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Crafting modern, responsive designs with motion and interaction.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>My Work</h2>
+        <div class="project">
+            <h3>Project Title</h3>
+            <p>Brief description of the project...</p>
+            <a href="#">View Project</a>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>A short bio about your experience and skills.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: your-email@example.com</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Ryan Roehl. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuToggle = document.getElementById("menu-toggle");
+            const navMenu = document.getElementById("nav-menu");
+            menuToggle.addEventListener("click", () => {
+                navMenu.classList.toggle("show");
+            });
+        });
+    </script>
+    
+</body>
 </html>
+
